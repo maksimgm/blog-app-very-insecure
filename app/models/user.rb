@@ -4,7 +4,6 @@ class User < ActiveRecord::Base
   validates :email, presence: true , length: {minimum: 2}
   validates :password, presence: true, length: {minimum: 2}
 
-  def has_secure_password
-    true
-  end
+  has_secure_password
+  
 end

